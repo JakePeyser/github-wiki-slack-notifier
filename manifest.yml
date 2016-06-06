@@ -1,0 +1,11 @@
+---
+applications:
+- name: github-wiki-slack-notifier
+  host: github-wiki-slack-notifier
+  path: .
+  instances: 1
+  memory: 128M
+  buildpack: sdk-for-nodejs
+  env:
+    GITHUB_WEBHOOK_SECRET: XXX
+    SLACK_WEBHOOK_URL: XXX

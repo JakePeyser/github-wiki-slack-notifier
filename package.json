@@ -3,19 +3,33 @@
   "version": "1.0.0",
   "description": "Posts edits to a GitHub wiki to Slack",
   "keywords": [
+    "bluemix",
     "slack",
     "github",
     "wiki"
   ],
   "scripts": {
-    "start": "coffee server.coffee"
+    "start": "node server.js"
   },
-  "author": "Ian Langworth <ian@artillery.com>",
+  "authors": [
+    {
+      "name": "Ian Langworth",
+      "email": "ian@artillery.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Jake Peyser",
+      "email": "jepeyser@us.ibm.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
-    "coffee-script": "1.10.0",
-    "getenv": "0.6.0",
     "github-webhook-handler": "0.5.0",
-    "node-slack": "0.0.7"
+    "node-slack": "0.0.7",
+    "cfenv": "1.0.3"
+  },
+  "devDependencies": {
+    "dotenv": "2.0.0"
   }
 }
